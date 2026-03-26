@@ -29,7 +29,7 @@ export function baseOptions(locale: string): BaseLayoutProps {
           </span>
         </>
       ),
-      url: 'https://api.esencloud.com.cn/',
+      url: 'https://api.esencloud.com/',
     },
   };
 }
