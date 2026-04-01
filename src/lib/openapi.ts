@@ -28,6 +28,8 @@ async function walkJsonFiles(dir: string): Promise<string[]> {
 export const openapi = createOpenAPI({
   // Set proxy URL to resolve CORS issues
   proxyUrl: '/api/proxy',
+  // Set base URL for API requests
+  baseUrl: 'https://api.esencloud.com',
   // Always load generated per-endpoint OpenAPI files (clean single source of truth)
   async input() {
     const files = await walkJsonFiles('./openapi/generated');
